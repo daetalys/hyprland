@@ -1,0 +1,32 @@
+[color]
+	ui = auto
+[commit]
+    gpgsign = true
+[core]
+	editor = vim
+[credential]
+	helper = keepassxc -vv --git-groups
+[diff]
+	colorMoved = zebra
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[init]
+	defaultBranch = master
+[merge]
+    renames = true
+    directoryRenames = true
+[pull]
+	rebase = false
+[status]
+	displayCommentPrefix = true
+	showStash = true
+	showUntrackedFiles = no
+[tag]
+	gpgSign = true
+[user]
+	name = Dætalys
+	email = oracle@daetalytica.io
+	signingkey = C8D8684341692765
